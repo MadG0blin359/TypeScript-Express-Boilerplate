@@ -1,11 +1,12 @@
 # 🚀 TypeScript + Express + Supabase Boilerplate
 
-A production-ready, highly extensible REST API boilerplate built with **TypeScript**, **Express**, and **Supabase** (Database, Authentication, and Storage).
+A production-ready, highly extensible REST API boilerplate built with **TypeScript**, **Express 5**, and **Supabase** (Database, Authentication, and Storage).
 
 ---
 
 ## ✨ Features
 
+- **Express 5 (Latest Stable)**: Native async error handling — promises that reject or throw inside async controllers and middleware are automatically caught without requiring `express-async-handler` or verbose `try/catch` wrappers.
 - **TypeScript (ESM / NodeNext)**: Strict type checking, modern ECMAScript Modules, and fast development with `tsx`.
 - **Supabase Integration**:
   - **Database (PostgreSQL)**: Fully typed CRUD repository pattern with pagination, filtering, search, and sorting.

@@ -49,8 +49,8 @@ export function createApp(): Express {
   // Mount API & Health routes
   app.use(routes);
 
-  // 404 Catch-All Handler
-  app.all("*", (req: Request, res: Response) => {
+  // 404 Catch-All Handler (Express 5 compatible)
+  app.use((req: Request, res: Response) => {
     res.status(404).json({
       success: false,
       message: `Route ${req.method} ${req.originalUrl} not found`,
